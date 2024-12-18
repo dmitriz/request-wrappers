@@ -12,7 +12,7 @@ const { URL } = require('url');
  * @param {number} [params.timeout=5000] - Request timeout in milliseconds
  * @returns {function} A function that takes success and error callbacks
  */
-const json_req = (params) => (onSuccess, onError) => {
+const req_json = (params) => (onSuccess, onError) => {
   // Set default values
   const {
     url,
@@ -93,7 +93,7 @@ const json_req = (params) => (onSuccess, onError) => {
 };
 
 // Example usage
-module.exports = json_req;
+module.exports = req_json;
 
 // Example of how to use the wrapper
 /*
