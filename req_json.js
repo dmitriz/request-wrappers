@@ -97,7 +97,7 @@ module.exports = req_json;
 
 // Example of how to use the wrapper
 /*
-const makeRequest = json_req({
+const makeRequest = req_json({
   url: 'https://api.example.com/data',
   method: 'POST',
   body: { key: 'value' }
